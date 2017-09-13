@@ -1,0 +1,39 @@
+{
+  "name": "stateful-decorator",
+  "version": "1.0.0",
+  "description": "State machine on React functional components.",
+  "main": "dist/stateful-decorator.umd.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/churris/stateful-decorator.git"
+  },
+  "keywords": [
+    "react",
+    "redux",
+    "decorator",
+    "state"
+  ],
+  "author": "René Monroy <rene.dev.js@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/churris/stateful-decorator/issues"
+  },
+  "homepage": "https://github.com/churris/stateful-decorator#readme",
+  "devDependencies": {
+    "eslint": "^4.6.1",
+    "eslint-plugin-react": "^7.3.0",
+    "rollup": "^0.49.3",
+    "rollup-plugin-buble": "^0.15.0",
+    "rollup-plugin-commonjs": "^8.2.1",
+    "rollup-plugin-eslint": "^4.0.0",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-uglify": "^2.0.1"
+  },
+  "dependencies": {
+    "hoist-non-react-statics": "^2.3.1",
+    "react": "^15.6.1"
+  }
+}
