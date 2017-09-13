@@ -47,3 +47,6 @@ render(<Counter />, document.getElementById('root'));
 - No need to bind events
 - Hence, no need of constructor
 - Works on regular components
+
+## Demo
+To run demo just execute `npm run dev` to build with watcher and `npm start` to serve the static files.
