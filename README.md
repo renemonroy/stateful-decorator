@@ -46,3 +46,4 @@ render(<Counter />, document.getElementById('root'));
 - Isolated actions
 - No need to bind events
 - Hence, no need of constructor
+- Works on regular components
