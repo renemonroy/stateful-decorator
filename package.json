@@ -2,7 +2,10 @@
   "name": "stateful-decorator",
   "version": "1.0.0",
   "description": "State machine on React functional components.",
+  "source": "src/index.js",
   "main": "dist/stateful-decorator.umd.js",
+  "module": "dist/stateful-decorator.es.js",
+  "jsnext:main": "dist/stateful-decorator.es.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint src",
