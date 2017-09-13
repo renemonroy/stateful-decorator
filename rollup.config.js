@@ -1,5 +1,6 @@
 import commonjs from 'rollup-plugin-commonjs';
 import buble from 'rollup-plugin-buble';
+import replace from 'rollup-plugin-replace';
 import resolve from 'rollup-plugin-node-resolve';
 import uglify from 'rollup-plugin-uglify';
 import {
@@ -23,6 +24,9 @@ export default [
     external,
     globals,
     plugins: filterNulls([
+      replace({
+        'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
+      }),
       resolve(),
       commonjs(),
       buble(),
@@ -35,6 +39,9 @@ export default [
     external,
     globals,
     plugins: filterNulls([
+      replace({
+        'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
+      }),
       resolve(),
       commonjs(),
       buble({

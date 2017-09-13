@@ -9,7 +9,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint src",
-    "build": "NODE_ENV=production rollup -c"
+    "build": "NODE_ENV=production rollup -c",
+    "dev": "rollup -c rollup.config.demo.js -w",
+    "start": "serve demo"
   },
   "repository": {
     "type": "git",
@@ -30,12 +32,15 @@
   "devDependencies": {
     "eslint": "^4.6.1",
     "eslint-plugin-react": "^7.3.0",
-    "rollup": "^0.49.3",
+    "react-dom": "^15.6.1",
+    "rollup": "^0.48.2",
     "rollup-plugin-buble": "^0.15.0",
     "rollup-plugin-commonjs": "^8.2.1",
     "rollup-plugin-eslint": "^4.0.0",
     "rollup-plugin-node-resolve": "^3.0.0",
-    "rollup-plugin-uglify": "^2.0.1"
+    "rollup-plugin-replace": "^2.0.0",
+    "rollup-plugin-uglify": "^2.0.1",
+    "serve": "^6.0.6"
   },
   "dependencies": {
     "hoist-non-react-statics": "^2.3.1",

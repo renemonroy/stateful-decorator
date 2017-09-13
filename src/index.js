@@ -1,8 +1,8 @@
-import { Component, createElement } from 'react';
+import React from 'react';
 import hoistNonReactStatics from 'hoist-non-react-statics';
 
 const stateful = (...args) => WrappedComponent => {
-  class Dispatcher extends Component {
+  class Dispatcher extends React.Component {
     constructor(props) {
       super(props);
       this.state = args.shift();
@@ -18,11 +18,11 @@ const stateful = (...args) => WrappedComponent => {
     
     render() {
       return (
-        createElement(
+        React.createElement(
           WrappedComponent,
           Object.assign({}, this.props, this.state, {
             dispatch: this.handleDispatch
-          }))
+        }))
       );
     }
   }
