@@ -41,3 +41,8 @@ const Counter = stateful(initialState, actions)(({ count, dispatch }) => (
 
 render(<Counter />, document.getElementById('root'));
 ```
+
+## Advantages
+- Isolated actions
+- No need to bind events
+- Hence, no need of constructor
